@@ -8,11 +8,11 @@ During the medical CT scan, the radiating equipment radiates X-rays through the 
 ### Fourier Transform
 The mathematical meaning of the Fourier transform is to convert a function into a set of periodic functions.All periodic functions can be expressed as the product of a sum of sines (or cosines) and a Fourier series.The physical meaning of Fourier transform is to realize the domain transformation of images. Fourier transform and inverse Fourier transform respectively transform (gray scale) images from spatial domain to frequency domain and then from frequency domain to spatial domain.
 The Fourier transform in a two-dimensional plane:
-<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F(\xi,\eta)" title="F(\xi,\eta)" /> is the result of f(x,y) after two-dimensional Fourier transform.\\
+<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F(\xi,\eta)" title="F(\xi,\eta)" /> is the result of f(x,y) after two-dimensional Fourier transform.\
 
-<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F\left\{f(x,y)\right\}&space;&space;=&space;F(\xi,\eta)&space;=&space;\int\int_{-\infty}^{\infty}f(x,y)e^{-j2\pi(\xi&space;x&plus;\eta&space;y)}dxdy" title="F\left\{f(x,y)\right\} = F(\xi,\eta) = \int\int_{-\infty}^{\infty}f(x,y)e^{-j2\pi(\xi x+\eta y)}dxdy" />\\
+<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F\left\{f(x,y)\right\}&space;&space;=&space;F(\xi,\eta)&space;=&space;\int\int_{-\infty}^{\infty}f(x,y)e^{-j2\pi(\xi&space;x&plus;\eta&space;y)}dxdy" title="F\left\{f(x,y)\right\} = F(\xi,\eta) = \int\int_{-\infty}^{\infty}f(x,y)e^{-j2\pi(\xi x+\eta y)}dxdy" />\
 
-<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F^{-1}\left\{F(\xi,\eta)\right\}&space;&space;=&space;f(x,y)&space;=&space;\int\int_{-\infty}^{\infty}F(\xi,\eta)e^{j2\pi(\xi&space;x&plus;\eta&space;y)}d\xi&space;d\eta" title="F^{-1}\left\{F(\xi,\eta)\right\} = f(x,y) = \int\int_{-\infty}^{\infty}F(\xi,\eta)e^{j2\pi(\xi x+\eta y)}d\xi d\eta" />\\
+<img src="https://latex.codecogs.com/png.image?\dpi{110}&space;F^{-1}\left\{F(\xi,\eta)\right\}&space;&space;=&space;f(x,y)&space;=&space;\int\int_{-\infty}^{\infty}F(\xi,\eta)e^{j2\pi(\xi&space;x&plus;\eta&space;y)}d\xi&space;d\eta" title="F^{-1}\left\{F(\xi,\eta)\right\} = f(x,y) = \int\int_{-\infty}^{\infty}F(\xi,\eta)e^{j2\pi(\xi x+\eta y)}d\xi d\eta" />\
 
 
 ## Step1: Get the radon projection from AstraToolbox using matlab
