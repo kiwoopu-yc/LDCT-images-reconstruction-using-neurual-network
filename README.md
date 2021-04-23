@@ -26,3 +26,8 @@ The filter back projection reconstruction (FBP) image of the image was generated
 In Python, the function in the mat4py package is used to read. Mat file, and the Radon projection and reference image of the same image are put into a tuple as a training set, and stored as a file in the format of. PKL.
 In Python, functions in the mat4py package are used to read the.mat file, and the Radon projection of the image is stored as the.npy format file as the test set.
 
+## Step2: Train the neural network
+
+
+
+
