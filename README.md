@@ -56,6 +56,8 @@ In Python, functions in the mat4py package are used to read the .mat file, and t
 
 #### VAE
 
+Variational Autoencoder (VAE) is an extension of AE. It will have a sampling layer instead of a simple full connection layer. This layer will use the mean and variance from the last layer of the encoder to get a Gaussian sample and use it as the input to the decoder. 
+
 :rocket: [Define VAE (line 49-81)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
 
 #### 2D-CNN(unfinished)
