@@ -29,7 +29,9 @@ In Python, functions in the mat4py package are used to read the.mat file, and th
 ## Step2: Train the neural network
 ### Architecture
 <div align=center><src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg"/></div>
-
+<center>
+     <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg"/>
+</center>
 ### Neural network using PyTorch
 
 #### VAE
