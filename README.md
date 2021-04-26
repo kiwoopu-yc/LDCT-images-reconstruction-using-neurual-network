@@ -27,29 +27,38 @@ In Python, the function in the mat4py package is used to read. Mat file, and the
 In Python, functions in the mat4py package are used to read the.mat file, and the Radon projection of the image is stored as the.npy format file as the test set.
 
 ## Step2: Train the neural network
+
 ### Architecture
-<div align=center><src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg"/></div>
-<center>
-     <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg"/>
-</center>
+<div style="align: center">
+<img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg"/>
+</div>
 ### Neural network using PyTorch
 
 #### VAE
 
 #### 2D-CNN(unfinished)
 
-### Data Loader
+#### Load data
 
-### Loss function and Optimizer
+#### Loss function and Optimizer
+
+<div style="align: center">
+<img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/optimizers.jpg"/>
+</div>
+
+#### Evaluation and visulization
 
 
-![optimizer](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/optimizers.jpg)
 
-### evaluation and visulization
+<div style="align: center">
+<img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/72view.jpg"/>
+</div>
 
-![72view](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/72view.jpg)
 
-![optimizer](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/all.jpg)
+
+<div style="align: center">
+<img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/all.jpg"/>
+</div>
 
 
 
