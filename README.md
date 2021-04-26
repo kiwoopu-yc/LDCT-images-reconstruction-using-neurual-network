@@ -19,6 +19,8 @@ The Fourier transform in a two-dimensional plane:
 ### About Astra Toolbox
 Astra Toolbox is a tool kit for 2D and 3D tomography using GPU acceleration. It is available for download on either MATLAB or Python. The authors of Astra Toolbox have a column on YouTube that provides tutorial videos for beginners.
 Astra Toolbox supports 2D parallel and fan beam projections as well as 3D parallel and cone beam projections, and provides a range of reconstruction algorithms, including: filtered back projection reconstruction (FBP), joint iterative reconstruction (SIRT), joint algebraic iterative reconstruction (SART), and conjugate gradient method (CGLS).The authors also provide a variety of different filters for each algorithm.
+
+:rocket:[Astra Toolbox](https://www.youtube.com/channel/UCcnUlWuFeS9miMR_o8-6v3w/videos)
 ### Using Altra Toolbox Obtain Radon Projections
 All the training test data were processed in advance in MATLAB. The images in the data set were first clipped to a uniform size (512×512), and then processed using Astra Toolbox.
 Radon projections of images were generated using Astra Toolbox with the number of perspectives 72, 145, 290, and 1160, the number of detectors 736, and the data was stored in.mat format.
@@ -59,7 +61,5 @@ In Python, functions in the mat4py package are used to read the.mat file, and th
 <div style="align: center">
 <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/all.jpg"/>
 </div>
-
-
 
 
