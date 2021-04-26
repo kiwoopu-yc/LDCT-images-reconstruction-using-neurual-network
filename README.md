@@ -56,14 +56,34 @@ In Python, functions in the mat4py package are used to read the .mat file, and t
 
 #### VAE
 
+:rocket: [Define VAE (line 49-81)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+
 #### 2D-CNN(unfinished)
 
+:rocket: [2D-CNN]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2dcnn(unfinished).py
+
 #### Dataset
+The training dataset consists of a large number of generic images from ImageNet.
+
+The test dataset consisted of 20 real clinical brain CT images from Kaggle's public dataset, and the remaining 180 brain CT images from the same dataset were also included in the training set. Your can find in the root file. 
 
 #### Load data
 
+:rocket: step1: [Convert .mat to numpy]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/mat2np.py
+
+:rocket: step2: [Compile training data and target data]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2npyconnect.py
+
+:rocket: step3: [Load data using torch.utils.data.DataLoader (line 117-119)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+
 #### Loss function and Optimizer
 
+
+:rocket: [Training (line 122-149)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+
+
+Adjust parameters based on results.
+
+Here is the loss using different parameters, we can see Adam worked best at end.
 <div style="align: center">
 <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/optimizers.jpg"/>
 </div>
