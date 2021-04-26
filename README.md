@@ -28,6 +28,23 @@ In Python, functions in the mat4py package are used to read the.mat file, and th
 
 ## Step2: Train the neural network
 
+![archi](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/archi.jpg)
+### Build neural network using PyTorch
+
+
+### Data Loader
+
+### Loss function and Optimizer
+
+
+![optimizer](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/optimizers.jpg)
+
+### evaluation and visulization
+
+![72view](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/72view.jpg)
+
+![optimizer](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/all.jpg)
+
 
 
 
