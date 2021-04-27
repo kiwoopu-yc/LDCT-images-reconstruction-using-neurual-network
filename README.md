@@ -113,3 +113,5 @@ The PSNR (Peak Signal to Noise Ratio) was also introduced to evaluate the qualit
 <div style="align: center">
 <img src="https://latex.codecogs.com/svg.image?PSNR&space;=&space;10log_{10}\left&space;(&space;\frac{\left&space;(&space;2^{n}-1&space;\right&space;)^2}{MSE}&space;\right&space;)" title="PSNR = 10log_{10}\left ( \frac{\left ( 2^{n}-1 \right )^2}{MSE} \right )" />
 </div>
+
+:rocket: [PSNR python code](https://gist.github.com/nimpy/5b0085075a54ba2e94f2cfabf5a98a57)
