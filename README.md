@@ -58,11 +58,11 @@ In Python, functions in the mat4py package are used to read the .mat file, and t
 
 Variational Autoencoder (VAE) is an extension of AE. It will have a sampling layer instead of a simple full connection layer. This layer will use the mean and variance from the last layer of the encoder to get a Gaussian sample and use it as the input to the decoder. 
 
-:rocket: [Define VAE (line 49-81)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+:rocket: [Define VAE (line 49-81)](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py)
 
 #### 2D-CNN(unfinished)
 
-:rocket: [2D-CNN]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2dcnn(unfinished).py
+:rocket: [2D-CNN](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2dcnn(unfinished).py)
 
 #### Dataset
 The training dataset consists of a large number of generic images from ImageNet.
@@ -71,16 +71,16 @@ The test dataset consisted of 20 real clinical brain CT images from Kaggle's pub
 
 #### Load data
 
-:rocket: step1: [Convert .mat to numpy]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/mat2np.py
+:rocket: step1: [Convert .mat to numpy](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/mat2np.py)
 
-:rocket: step2: [Compile training data and target data]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2npyconnect.py
+:rocket: step2: [Compile training data and target data](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/2npyconnect.py)
 
-:rocket: step3: [Load data using torch.utils.data.DataLoader (line 117-119)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+:rocket: step3: [Load data using torch.utils.data.DataLoader (line 117-119)](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py)
 
 #### Loss function and Optimizer
 
 
-:rocket: [Training (line 122-149)]https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py
+:rocket: [Training (line 122-149)](https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Model/VAE.py)
 
 
 Adjust parameters based on results.
