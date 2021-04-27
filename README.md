@@ -92,16 +92,24 @@ Here is the loss using different parameters, we can see Adam worked best at end.
 
 #### Evaluation and visulization
 
-
+FBP VS VAE (72views)
 
 <div style="align: center">
 <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/72view.jpg"/>
 </div>
 
-
+In the experiment, the same parallel imaging geometry was used, but the number of Radon projections with different perspectives were 1160, 290, 145, and 72 perspectives, respectively. Specifically, the results of the different views are displayed as rows from top to bottom. The columns from left to right show, respectively, the reference image, the filtered backprojection reconstruction image, and the experimental results of the reconstruction network output. The loss information between the reference image and the reconstructed image by filtering back projection, and the loss information between the reference image and the experimental results outputted by the reconstructed network. By comparing the reconstruction results of the two algorithms in the second column and the third column, we can see that the performance of the newly proposed reconstruction network is similar to that of the filtering back projection reconstruction algorithm, which indicates that the network framework of this topic performs well in the aspect of inverse Radon transform. In addition, by comparing the loss information of Column 4 and Column 5, it can be seen that under 72 and 145 viewing angles, filtering back projection reconstruction has more loss information, and many stripe artifacts can be observed from the images of Column 2. However, the network framework proposed in this project has less information loss and it is difficult to observe artifacts. However, when the viewing angles are increased to 290 and 1160, the readding performance of this framework is worse than that of the filter backprojection reconstruction.
 
 <div style="align: center">
 <img src="https://github.com/kiwoopu-yc/LDCT-images-reconstruction-using-neurual-network/blob/main/Pics/all.jpg"/>
 </div>
 
+The PSNR (Peak Signal to Noise Ratio) was also introduced to evaluate the quality of reconstructed CT images, and the PSNR was calculated for 20 images in the test set.PSNR is the most common and widely used objective image evaluation index, but it is based on the error between corresponding pixel points, that is, based on error sensitive image quality evaluation.Because did not take into account the human visual characteristics (human eye sensitivity to low spatial frequency contrast difference is higher, the sensitivity of the human eye to brightness contrast difference is relatively high colority, perception of the human eye to a regional results will be affected by the adjacent area around, etc.), so often appear evaluation results do not agree with people's subjective feeling.The unit of PSNR is dB, and the larger the value is, the smaller the distortion is. The formula is as follows:
 
+<div style="align: center">
+<img src="https://latex.codecogs.com/svg.image?MSE&space;=&space;\frac{1}{H&space;*&space;W}\sum_{i=1}^{H}&space;\sum_{j=1}^{W}\left&space;(&space;\left&space;(&space;X\left&space;(&space;i,j&space;\right&space;)&space;\right&space;)&plus;\left&space;(Y\left&space;(&space;i,j&space;\right&space;)&space;&space;\right&space;)&space;\right&space;)^2" title="MSE = \frac{1}{H * W}\sum_{i=1}^{H} \sum_{j=1}^{W}\left ( \left ( X\left ( i,j \right ) \right )+\left (Y\left ( i,j \right ) \right ) \right )^2" />
+</div>
+
+<div style="align: center">
+<img src="https://latex.codecogs.com/svg.image?PSNR&space;=&space;10log_{10}\left&space;(&space;\frac{\left&space;(&space;2^{n}-1&space;\right&space;)^2}{MSE}&space;\right&space;)" title="PSNR = 10log_{10}\left ( \frac{\left ( 2^{n}-1 \right )^2}{MSE} \right )" />
+</div>
